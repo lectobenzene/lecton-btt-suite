@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Prefix
+Bundle-SymbolicName: com.tcs.mobility.sonar.prefix;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.tcs.mobility.sonar.prefix.Activator
+Bundle-Vendor: TCS
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.core,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

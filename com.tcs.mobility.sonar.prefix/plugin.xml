@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.jdt.core.compilationParticipant">
+      <compilationParticipant
+            class="com.tcs.mobility.sonar.prefix.compilation.SonarCompilationParticipant"
+            createsProblems="true"
+            id="com.tcs.mobility.sonar.prefix.compilationParticipant1"
+            modifiesEnvironment="true"
+            requiredSourceLevel="1.6">
+      </compilationParticipant>
+   </extension>
+   <extension
+         id="marker.stringliteral"
+         name="StringLiteral Marker"
+         point="org.eclipse.core.resources.markers">
+      <persistent
+            value="false">
+      </persistent>
+      <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <super
+            type="org.eclipse.core.resources.textmarker">
+      </super>
+   </extension>
+
+</plugin>

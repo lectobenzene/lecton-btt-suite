@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.tcs.mobility.btt.logger.feature.debuglogger_1.0.0.201409021718.jar" id="com.tcs.mobility.btt.logger.feature.debuglogger" version="1.0.0.201409021718"/>
+</site>

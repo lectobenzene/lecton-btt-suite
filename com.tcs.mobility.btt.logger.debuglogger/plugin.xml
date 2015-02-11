@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.tcs.mobility.btt.logger.debuglogger.bttlogger"
+            name="BTT Logger">
+      </category>
+      <view
+            category="com.tcs.mobility.btt.logger.debuglogger.bttlogger"
+            class="com.tcs.mobility.btt.logger.debuglogger.views.DebugLoggerView"
+            icon="icons/debug_view.gif"
+            id="com.tcs.mobility.btt.logger.debuglogger.debugloggerview"
+            name="Debug Logger"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.tcs.mobility.btt.logger.debuglogger.preferences.BTTLoggerPreferences"
+            id="com.tcs.mobility.btt.logger.debuglogger.preferences.BTTLoggerPreferences"
+            name="BTT Logger">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.tcs.mobility.btt.logger.debuglogger.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>
